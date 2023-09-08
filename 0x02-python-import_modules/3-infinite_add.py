@@ -14,5 +14,5 @@ if __name__ == "__main__":
         while i <= n:
             add += int(argv[i])
             i += 1
-            print("{:d}".format(add))
+        print("{:d}".format(add))
     inf_add(sys.argv)

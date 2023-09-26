@@ -5,6 +5,6 @@ def safe_print_division(a, b):
         print("Inside result: {:.1f}".format(result))
     except Exception as e:
         result = None
-        print("An error occurred: {}. Inside result: {}".format(e, result))
+        print("Inside result: {}".format(e, result))
     finally:
         return result

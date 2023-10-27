@@ -1,12 +1,18 @@
 #!/usr/bin/python3
-"""a class Rectangle that inherits from BaseGeometry (7-base_geometry.py)."""
+
+"""A class Rectangle that inherits from BaseGeometry (7-base_geometry.py)."""
+
+# Import the BaseGeometry class from 7-base_geometry
+
 
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
 class Rectangle(BaseGeometry):
+    """A class representing a Rectangle that inherits from BaseGeometry."""
+
     def __init__(self, width, height):
-        """Intialize a new Rectangle.
+        """Initialize a new Rectangle.
 
         Args:
             width (int): The width of the new Rectangle.
@@ -18,10 +24,17 @@ class Rectangle(BaseGeometry):
         self.__height = height
 
     def area(self):
-         return self.__width * self.__height
+        """Calculate the area of the Rectangle.
+
+        Returns:
+            int: The area of the Rectangle.
+        """
+        return self.__width * self.__height
 
     def __str__(self):
-        string = "[" + str(self.__class__.__name__) + "] "
-        string += str(self.__width) + "/" + str(self.__height)
-        return string
+        """Return a string representation of the Rectangle.
 
+        Returns:
+            str: A string in the format "[Rectangle] width/height".
+        """
+        return f"[{self.__class__.__name__}] {self.__width}/{self.__height}"

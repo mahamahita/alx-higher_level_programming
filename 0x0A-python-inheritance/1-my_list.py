@@ -2,6 +2,7 @@
 
 """This module defines a custom list class called MyList."""
 
+
 class MyList(list):
     """A class that inherits from the list class.
 
@@ -27,4 +28,3 @@ class MyList(list):
             None
         """
         print(sorted(self))
-
